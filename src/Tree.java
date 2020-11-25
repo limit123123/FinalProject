@@ -1,5 +1,8 @@
 
-//Description: Suffix Tree
+/*
+//Programmer：Sisi Kang
+//11/24/2020
+ */
 
 import java.util.ArrayList;
 

@@ -1,5 +1,8 @@
 
-//Description: Suffix Tree
+/*
+//Programmer：Sisi Kang
+//11/24/2020
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -138,8 +141,13 @@ public class Node<T> extends ProbabilityGenerator<T>{
             //Find the conditional probabilities for the root. You can decide to either check for the case for when there are multiple maximums or not
 
             //NOT checking –Option 1
-            int idx = alphabet_counts.indexOf(max);
-            double rootRatio = myRoot.getCountsAtToken(alphabet.get(idx)) / myRoot.count;
+            int tmp = 0;
+            for (int i=0; i<alphabet_counts.size(); i++) {
+                if (alphabet_counts.get(i) == max) {
+                    tmp = Math.max(tmp, myRoot.getCountsAtToken(alphabet.get(i)));
+                }
+            }
+            double rootRatio = (double) tmp / myRoot.count;
 
             //Note this is not optimized algorithm – I believe you could take time and exploit the ArrayList methods more than I did, but this works.
 
@@ -197,7 +205,7 @@ public class Node<T> extends ProbabilityGenerator<T>{
         alphabet_counts.set(index,alphabet_counts.get(index)+1);
     }
 
-    double getCountsAtToken(T token) {
+    int getCountsAtToken(T token) {
         int idx = alphabet.indexOf(token);
         return alphabet_counts.get(idx);
     }

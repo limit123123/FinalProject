@@ -1,3 +1,6 @@
+//Programmer：Sisi Kang
+//11/24/2020
+
 import jm.music.data.Score;
 import jm.util.Play;
 import jm.util.Read;
@@ -8,7 +11,7 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 
 public class P extends PApplet {
-	MelodyPlayer player;
+	MelodyPlayer player = new MelodyPlayer(this, 100.0f);
 	//Minim minim;
 	int mode = 0;
 	String filePath = null;
@@ -16,8 +19,11 @@ public class P extends PApplet {
 		PApplet.main("P"); 
 	}
 	public void settings() {
-		  size(850,450);
-
+		size(850,450);
+		ArrayList<Integer> bgm = new ArrayList<>();
+		bgm.add(0);
+		player.setup();
+		player.setMelody(bgm);
 	}
 
 	public	void draw(){
@@ -36,16 +42,16 @@ public class P extends PApplet {
 		//4 big cirlce
 		fill(90,89,87);
 		ellipse(550,150,50,50);
-		ellipse(650,150,50,50);
+//		ellipse(650,150,50,50);
 		ellipse(550,250,50,50);
 		ellipse(650,250,50,50);
 		////4 small cirlce
-		fill(45,47,46);
+		fill(145,201,64);
 		ellipse(550,150,25,25);
 		ellipse(550,250,25,25);
 		ellipse(650,250,25,25);
-		fill(145,201,64);
-		ellipse(650,150,25,25);
+//		fill(145,201,64);
+//		ellipse(650,150,25,25);
 		// word a s d f
 		  textSize(50);
 		fill(44,36,34);
@@ -62,10 +68,9 @@ public class P extends PApplet {
 		// word melody markov Beats mc 
 		  textSize(20);
 		fill(44,36,34);
-		text("melody", 517, 195);
-		text("markov", 615,195);
-		text("Beats", 527, 295);
-		text("pst", 635, 295);
+		text("o- Orig. Melody", 517, 195);
+		text("m- Markov", 505,295);
+		text("p- PST", 625, 295);
 		// word AI.2.0
 		 textSize(20);
 			fill(174,165,156);
@@ -74,7 +79,9 @@ public class P extends PApplet {
 			 textSize(25);
 				fill(44,30,62);
 				text("ARTIFICIAL IMPROVISER 2.0", 200, 70);
+				
 
+				player.play();
 		  
 		}
 	String getPath(String path) {
@@ -172,9 +179,6 @@ public class P extends PApplet {
 		System.out.println(new_pitch);
 		System.out.println(new_rhythm);
 
-		player = new MelodyPlayer(this, 100.0f); //bpm
-
-		player.setup();
 		player.setMelody(new_pitch); //assignments, generating probability on each pitch
 		player.setRhythm(new_rhythm); //assignments, generating probability on each rhythm
 		player.play();

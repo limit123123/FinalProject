@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="508d2bb7-1d4f-4384-9611-f7607099d360" name="Default Changelist" comment="" />
+    <list default="true" id="508d2bb7-1d4f-4384-9611-f7607099d360" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bin/MarkovGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/MarkovGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/MelodyPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/MelodyPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/MidiFileToNotes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/MidiFileToNotes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/P.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/P.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ProbabilityGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ProbabilityGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarkovGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MelodyPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MelodyPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidiFileToNotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MidiFileToNotes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProbabilityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProbabilityGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +24,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kfroRvR5GsBi2W8K8UtgDydvb5" />
   <component name="ProjectViewState">

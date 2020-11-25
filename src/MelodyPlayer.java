@@ -1,10 +1,5 @@
 
-/*
 
-//Date:
-//Description: Suffix Tree
- * 
- */
 
 import processing.core.PApplet;
 import themidibus.MidiBus;

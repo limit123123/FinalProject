@@ -1,9 +1,7 @@
 
-/* Date: 
- * 
- * Class: MidiFileToNotes
- * Description: Uses JMusic to get notes & info from a midi file
- * 
+/*
+//Programmer：Sisi Kang
+//11/24/2020
  */
 
 import jm.music.data.Note;
